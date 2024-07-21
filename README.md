@@ -3,6 +3,7 @@
 NEOBUILDER (C-Project-Manager) is a standalone build system designed from c. The entire build system is contained in a single header file "cpm.h"
 
 ## Example
+#### c-version:
 ```c
     #include "cpm.h"
 
@@ -12,6 +13,17 @@ NEOBUILDER (C-Project-Manager) is a standalone build system designed from c. The
         cpm_cmd_append(&build, "./src/main.c");
         cpm_cmd_append(&build, "-o", "main");
         cpm_compile(build);
-    } 
+    }
+```
+#### c++-version:
+```c++
+    #include "cpm.hpp"
+
+    int main(){
+        Cmd build("gcc");
+        build.arg("./src/main.c");
+        build.args({"-o", "main"});
+        build.exec();
+    }
 
 ```
