@@ -36,7 +36,7 @@ void cln(Arguments _args){
   cpm_rm(SUBMODFOLDER"/assembly/buildscript");
   cpm_log(CPM_INFO, "rm ./example/basic/buildscript\n");
   cpm_rm(SUBMODFOLDER"/basic/buildscript");
-  
+
 }
 
 const CliCommand build = {

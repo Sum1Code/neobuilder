@@ -7,3 +7,4 @@ example/builds/
 **/a.out
 **/a.out.*
 parm.c
+example/basic/hello
